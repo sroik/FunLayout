@@ -48,7 +48,7 @@ class DemoViewController: UIViewController {
         blackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(blackView)
         
-        blackView.fun_width == self.view.fun_width/4.0 + 50.0
+        blackView.fun_width == self.view.fun_width%999 / 4.0 + 50.0
         blackView.fun_center == self.view
         blackView.fun_height >= 123.0
         
