@@ -20,62 +20,23 @@ infix operator ~ {
     precedence 90
 }
 
-/*
-* Why duplicated code?
-* Because I wanna receive compile error,
-* when I use wrong type
-* neither FunLayoutAttribute, UIView nor CGFloat
-*/
-
-public func ~(left: FunLayoutAttribute, right: FunLayoutAttribute) -> [NSLayoutConstraint] {
+public func ~(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .Equal)
 }
 
-public func ~(left: FunLayoutAttribute, right: UIView) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .Equal)
-}
-
-public func ~(left: FunLayoutAttribute, right: CGFloat) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .Equal)
-}
-
-public func ==(left: FunLayoutAttribute, right: FunLayoutAttribute) -> [NSLayoutConstraint] {
-    return (left ~ right)
-}
-
-public func ==(left: FunLayoutAttribute, right: UIView) -> [NSLayoutConstraint] {
-    return (left ~ right)
-}
-
-public func ==(left: FunLayoutAttribute, right: CGFloat) -> [NSLayoutConstraint] {
+public func ==(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
     return (left ~ right)
 }
 
 //MARK:- less than or equal
 
-public func <=(left: FunLayoutAttribute, right: FunLayoutAttribute) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .LessThanOrEqual)
-}
-
-public func <=(left: FunLayoutAttribute, right: UIView) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .LessThanOrEqual)
-}
-
-public func <=(left: FunLayoutAttribute, right: CGFloat) -> [NSLayoutConstraint] {
+public func <=(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .LessThanOrEqual)
 }
 
 //MARK:- great than or equal
 
-public func >=(left: FunLayoutAttribute, right: FunLayoutAttribute) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .GreaterThanOrEqual)
-}
-
-public func >=(left: FunLayoutAttribute, right: UIView) -> [NSLayoutConstraint] {
-    return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .GreaterThanOrEqual)
-}
-
-public func >=(left: FunLayoutAttribute, right: CGFloat) -> [NSLayoutConstraint] {
+public func >=(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .GreaterThanOrEqual)
 }
 
@@ -84,7 +45,7 @@ public func >=(left: FunLayoutAttribute, right: CGFloat) -> [NSLayoutConstraint]
 public func *(left: FunLayoutAttribute, right: CGFloat) -> FunLayoutAttribute {
     var layoutAttribute = left
     layoutAttribute.multiplier = right
-    
+
     return layoutAttribute
 }
 

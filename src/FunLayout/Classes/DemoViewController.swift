@@ -48,7 +48,7 @@ class DemoViewController: UIViewController {
         
         blackBox.fun_width == self.view.fun_width/4.0 + 50.0
         blackBox.fun_center == self.view
-        blackBox.fun_height >= 150.0
+        blackBox.fun_height >= CGFloat(150.0)
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
