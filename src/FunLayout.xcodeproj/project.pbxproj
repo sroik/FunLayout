@@ -16,6 +16,7 @@
 		ACA771F81CD2387800BF1663 /* FunLayoutConstraintsActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */; };
 		ACA771F91CD2387800BF1663 /* FunLayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */; };
 		ACA771FA1CD2387800BF1663 /* UIView+FamiliarConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */; };
+		ACDE246D1CD25ABC00AF888C /* FunLayoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE246C1CD25ABC00AF888C /* FunLayoutable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutConstraintsActivation.swift; sourceTree = "<group>"; };
 		ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutOperators.swift; sourceTree = "<group>"; };
 		ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FamiliarConstraints.swift"; sourceTree = "<group>"; };
+		ACDE246C1CD25ABC00AF888C /* FunLayoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */,
 				ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */,
 				ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */,
+				ACDE246C1CD25ABC00AF888C /* FunLayoutable.swift */,
 			);
 			path = FunLayoutModule;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				ACA771FA1CD2387800BF1663 /* UIView+FamiliarConstraints.swift in Sources */,
 				ACA771F81CD2387800BF1663 /* FunLayoutConstraintsActivation.swift in Sources */,
+				ACDE246D1CD25ABC00AF888C /* FunLayoutable.swift in Sources */,
 				ACA771D71CD22C2F00BF1663 /* AppDelegate.swift in Sources */,
 				ACA771F71CD2387800BF1663 /* FunLayoutAttribute.swift in Sources */,
 				ACA771D81CD22C2F00BF1663 /* DemoViewController.swift in Sources */,

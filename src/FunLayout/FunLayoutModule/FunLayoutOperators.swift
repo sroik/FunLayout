@@ -13,30 +13,29 @@ import UIKit
 * firstItem.fun_attribute {== or ~, <=, >=} secondItem.fun_attribute {*, /} multiplier {+, -} constant
 */
 
-
 infix operator ~ {
 /* same as '==' operator */
     associativity left
     precedence 90
 }
 
-public func ~(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
+public func ~(left: FunLayoutAttribute, right: FunLayoutable) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .Equal)
 }
 
-public func ==(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
+public func ==(left: FunLayoutAttribute, right: FunLayoutable) -> [NSLayoutConstraint] {
     return (left ~ right)
 }
 
 //MARK:- less than or equal
 
-public func <=(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
+public func <=(left: FunLayoutAttribute, right: FunLayoutable) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .LessThanOrEqual)
 }
 
 //MARK:- great than or equal
 
-public func >=(left: FunLayoutAttribute, right: Any) -> [NSLayoutConstraint] {
+public func >=(left: FunLayoutAttribute, right: FunLayoutable) -> [NSLayoutConstraint] {
     return fun_activateConstraints(leftLayoutAttribute:left, right: right, relation: .GreaterThanOrEqual)
 }
 

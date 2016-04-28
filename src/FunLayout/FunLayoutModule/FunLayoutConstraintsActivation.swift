@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal func fun_activateConstraints(var leftLayoutAttribute leftLayoutAttribute: FunLayoutAttribute, right: Any, relation: NSLayoutRelation) -> [NSLayoutConstraint] {
+internal func fun_activateConstraints(var leftLayoutAttribute leftLayoutAttribute: FunLayoutAttribute, right: FunLayoutable, relation: NSLayoutRelation) -> [NSLayoutConstraint] {
     
     leftLayoutAttribute.relation = relation
     leftLayoutAttribute.owner?.fun_removeFamiliarConstraints(forFunLayoutAttribute: leftLayoutAttribute)
@@ -55,38 +55,24 @@ private func fun_layoutConstraints(leftLayoutAttribute leftLayoutAttribute: FunL
     return constraints
 }
 
-private func fun_suitableRightLayoutAttribute(leftLayoutAttribute: FunLayoutAttribute, right: Any) -> FunLayoutAttribute? {
+private func fun_suitableRightLayoutAttribute(leftLayoutAttribute: FunLayoutAttribute, right: FunLayoutable) -> FunLayoutAttribute? {
     var layoutAttribute = FunLayoutAttribute(attributes: [.NotAnAttribute], owner: nil)
     
     switch right {
     case let funLayoutAttribute as FunLayoutAttribute:
         layoutAttribute = funLayoutAttribute
         break
-        
+
     case let view as UIView:
         layoutAttribute.owner = view
         layoutAttribute.layoutAttributes = leftLayoutAttribute.layoutAttributes
         break
         
-    case let constant as CGFloat:
-        layoutAttribute.constant = constant
-        break
-        
-    case let constant as Double:
-        layoutAttribute.constant = CGFloat(constant)
-        break
-        
-    case let constant as Float:
-        layoutAttribute.constant = CGFloat(constant)
-        break
-        
-    case let constant as Int:
-        layoutAttribute.constant = CGFloat(constant)
-        break
-        
     default:
-        return nil
+        layoutAttribute.constant = CGFloat.fun_CGFloatWithFunLayoutable(right)
     }
     
     return layoutAttribute
 }
+
+
