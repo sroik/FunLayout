@@ -20,7 +20,7 @@ Alternatively U can use fun_prepareForLayout() function, which also clean all ol
 view.fun_prepareForLayout()
 ```
 
-#To layout elements use the following formula:
+####To layout elements use the following formula:
 ```swift
 firstItem.fun_attribute % priority {== or ~, <=, >=} secondItem.fun_attribute {*, /} multiplier {+, -} constant
 ```
