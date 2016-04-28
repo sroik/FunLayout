@@ -9,14 +9,19 @@
 import UIKit
 
 /*
-* Below usage formula:
-* firstItem.fun_attribute {== or ~, <=, >=} secondItem.fun_attribute {*, /} multiplier {+, -} constant
-*/
+ * Below usage formula:
+ * firstItem.fun_attribute {== or ~, <=, >=} secondItem.fun_attribute % priority {*, /} multiplier {+, -} constant
+ */
 
 infix operator ~ {
 /* same as '==' operator */
     associativity left
     precedence 90
+}
+
+infix operator %{
+    associativity left
+    precedence 91
 }
 
 public func ~(left: FunLayoutAttribute, right: FunLayoutable) -> [NSLayoutConstraint] {
@@ -67,6 +72,15 @@ public func +(left: FunLayoutAttribute, right: CGFloat) -> FunLayoutAttribute {
 public func -(left: FunLayoutAttribute, right: CGFloat) -> FunLayoutAttribute {
     var layoutAttribute = left
     layoutAttribute.constant = -right
+    
+    return layoutAttribute
+}
+
+//MARK:- priority operators
+
+public func %(left: FunLayoutAttribute, right: UILayoutPriority) -> FunLayoutAttribute {
+    var layoutAttribute = left
+    layoutAttribute.priority = right
     
     return layoutAttribute
 }
