@@ -48,15 +48,16 @@ class DemoViewController: UIViewController {
         blackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(blackView)
         
-        blackView.fun_width == self.view.fun_width%999 / 4.0 + 50.0
+        blackView.fun_width == self.view.fun_width / 4.0 + 50.0
         blackView.fun_center == self.view
-        blackView.fun_height >= 123.0
+        blackView.fun_height%1000 <= 200.0
+        blackView.fun_height >= 100.0
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             [unowned self] in
             
-            self.blackView.fun_height == 400.0
+            self.blackView.fun_height%750 == 500.0
             self.blackView.fun_width == self.view.fun_width*0.8 - 100.0
             self.blackView.fun_centerX == self.view.fun_centerX + 50.0
             

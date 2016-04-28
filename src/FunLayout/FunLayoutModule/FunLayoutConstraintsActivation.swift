@@ -47,7 +47,7 @@ private func fun_layoutConstraints(leftLayoutAttribute leftLayoutAttribute: FunL
             multiplier: rightLayoutAttribute.multiplier,
             constant: rightLayoutAttribute.constant)
     
-        constraint.priority = rightLayoutAttribute.priority
+        constraint.priority = leftLayoutAttribute.priority
         
         constraints.append(constraint)
     }
