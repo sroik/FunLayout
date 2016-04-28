@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACA771D71CD22C2F00BF1663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771D11CD22C2F00BF1663 /* AppDelegate.swift */; };
+		ACA771D81CD22C2F00BF1663 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771D21CD22C2F00BF1663 /* DemoViewController.swift */; };
+		ACA771D91CD22C2F00BF1663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA771D41CD22C2F00BF1663 /* Assets.xcassets */; };
+		ACA771DA1CD22C2F00BF1663 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA771D51CD22C2F00BF1663 /* Info.plist */; };
+		ACA771DB1CD22C2F00BF1663 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA771D61CD22C2F00BF1663 /* Launch Screen.storyboard */; };
+		ACA771F71CD2387800BF1663 /* FunLayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F31CD2387800BF1663 /* FunLayoutAttribute.swift */; };
+		ACA771F81CD2387800BF1663 /* FunLayoutConstraintsActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */; };
+		ACA771F91CD2387800BF1663 /* FunLayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */; };
+		ACA771FA1CD2387800BF1663 /* UIView+FamiliarConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC7A39091CD0B59800511917 /* FunLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA771D11CD22C2F00BF1663 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACA771D21CD22C2F00BF1663 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		ACA771D41CD22C2F00BF1663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA771D51CD22C2F00BF1663 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA771D61CD22C2F00BF1663 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ACA771F31CD2387800BF1663 /* FunLayoutAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutAttribute.swift; sourceTree = "<group>"; };
+		ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutConstraintsActivation.swift; sourceTree = "<group>"; };
+		ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunLayoutOperators.swift; sourceTree = "<group>"; };
+		ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FamiliarConstraints.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC7A39061CD0B59800511917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC7A39001CD0B59800511917 = {
+			isa = PBXGroup;
+			children = (
+				ACA771CF1CD22C2F00BF1663 /* FunLayout */,
+				AC7A390A1CD0B59800511917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC7A390A1CD0B59800511917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A39091CD0B59800511917 /* FunLayout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA771CF1CD22C2F00BF1663 /* FunLayout */ = {
+			isa = PBXGroup;
+			children = (
+				ACA771F21CD2387800BF1663 /* FunLayoutModule */,
+				ACA771D01CD22C2F00BF1663 /* Classes */,
+				ACA771D31CD22C2F00BF1663 /* Supporting Files */,
+			);
+			path = FunLayout;
+			sourceTree = "<group>";
+		};
+		ACA771D01CD22C2F00BF1663 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACA771D11CD22C2F00BF1663 /* AppDelegate.swift */,
+				ACA771D21CD22C2F00BF1663 /* DemoViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ACA771D31CD22C2F00BF1663 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACA771D41CD22C2F00BF1663 /* Assets.xcassets */,
+				ACA771D51CD22C2F00BF1663 /* Info.plist */,
+				ACA771D61CD22C2F00BF1663 /* Launch Screen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACA771F21CD2387800BF1663 /* FunLayoutModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACA771F31CD2387800BF1663 /* FunLayoutAttribute.swift */,
+				ACA771F41CD2387800BF1663 /* FunLayoutConstraintsActivation.swift */,
+				ACA771F51CD2387800BF1663 /* FunLayoutOperators.swift */,
+				ACA771F61CD2387800BF1663 /* UIView+FamiliarConstraints.swift */,
+			);
+			path = FunLayoutModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC7A39081CD0B59800511917 /* FunLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7A391B1CD0B59800511917 /* Build configuration list for PBXNativeTarget "FunLayout" */;
+			buildPhases = (
+				AC7A39051CD0B59800511917 /* Sources */,
+				AC7A39061CD0B59800511917 /* Frameworks */,
+				AC7A39071CD0B59800511917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunLayout;
+			productName = FunKit;
+			productReference = AC7A39091CD0B59800511917 /* FunLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC7A39011CD0B59800511917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Sroik;
+				TargetAttributes = {
+					AC7A39081CD0B59800511917 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = AC7A39041CD0B59800511917 /* Build configuration list for PBXProject "FunLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC7A39001CD0B59800511917;
+			productRefGroup = AC7A390A1CD0B59800511917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC7A39081CD0B59800511917 /* FunLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC7A39071CD0B59800511917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA771DB1CD22C2F00BF1663 /* Launch Screen.storyboard in Resources */,
+				ACA771DA1CD22C2F00BF1663 /* Info.plist in Resources */,
+				ACA771D91CD22C2F00BF1663 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC7A39051CD0B59800511917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA771FA1CD2387800BF1663 /* UIView+FamiliarConstraints.swift in Sources */,
+				ACA771F81CD2387800BF1663 /* FunLayoutConstraintsActivation.swift in Sources */,
+				ACA771D71CD22C2F00BF1663 /* AppDelegate.swift in Sources */,
+				ACA771F71CD2387800BF1663 /* FunLayoutAttribute.swift in Sources */,
+				ACA771D81CD22C2F00BF1663 /* DemoViewController.swift in Sources */,
+				ACA771F91CD2387800BF1663 /* FunLayoutOperators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC7A39191CD0B59800511917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC7A391A1CD0B59800511917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC7A391C1CD0B59800511917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/FunLayout/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.FunLayout;
+				PRODUCT_NAME = FunLayout;
+			};
+			name = Debug;
+		};
+		AC7A391D1CD0B59800511917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/FunLayout/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.FunLayout;
+				PRODUCT_NAME = FunLayout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC7A39041CD0B59800511917 /* Build configuration list for PBXProject "FunLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7A39191CD0B59800511917 /* Debug */,
+				AC7A391A1CD0B59800511917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7A391B1CD0B59800511917 /* Build configuration list for PBXNativeTarget "FunLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7A391C1CD0B59800511917 /* Debug */,
+				AC7A391D1CD0B59800511917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC7A39011CD0B59800511917 /* Project object */;
+}
