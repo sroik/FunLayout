@@ -3,6 +3,19 @@ Funny auto layout
 
 <a href="https://codebeat.co/projects/github-com-sroik-funlayout"><img alt="codebeat badge" src="https://codebeat.co/badges/8939b518-4230-4b79-b7d0-89457a896dee" /></a>
 
+## Introduction
+- Are U tired of the Apple's Auto Layout? 
+- Yes!
+
+That's is the main reason for creation FunLayout. FunLayout based on swift operators overloading.
+
+## Usage
+
+Before use FunLayout, make sure that view.translatesAutoresizingMaskIntoConstraints is false, or set it to false
+```swift
+view.translatesAutoresizingMaskIntoConstraints = false
+```
+
 ## Example
 
 ```swift
