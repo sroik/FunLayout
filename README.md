@@ -10,6 +10,10 @@ Funny auto layout
 That's is the main reason for creation FunLayout. FunLayout based on swift operators overloading.
 
 ## Usage
+Use the following formula:
+```swift
+firstItem.fun_attribute % priority {== or ~, <=, >=} secondItem.fun_attribute {*, /} multiplier {+, -} constant
+```
 
 Before use FunLayout, make sure that view.translatesAutoresizingMaskIntoConstraints is false, or set it to false
 ```swift
