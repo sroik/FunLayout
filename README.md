@@ -1,6 +1,8 @@
 # FunLayout
 Funny auto layout
 
+<a href="https://codebeat.co/projects/github-com-sroik-funlayout"><img alt="codebeat badge" src="https://codebeat.co/badges/8939b518-4230-4b79-b7d0-89457a896dee" /></a>
+
 ## Example
 
 ```swift
