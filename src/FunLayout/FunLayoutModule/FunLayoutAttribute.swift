@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal struct FunLayoutAttribute {
+public struct FunLayoutAttribute {
     var layoutAttributes: [NSLayoutAttribute]
     var owner: UIView?
     
@@ -25,10 +25,10 @@ internal struct FunLayoutAttribute {
 
 //MARK:- fun layout attributes handling
 
-extension UIView {
+public extension UIView {
     
     var fun_width: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Width], owner: self) }
-   
+    
     var fun_height: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Height], owner: self) }
     
     var fun_centerX: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.CenterX], owner: self) }
@@ -38,7 +38,7 @@ extension UIView {
     var fun_left: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Left], owner: self) }
     
     var fun_right: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Right], owner: self) }
-
+    
     var fun_top: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Top], owner: self) }
     
     var fun_bottom: FunLayoutAttribute { return FunLayoutAttribute(attributes: [.Bottom], owner: self) }
