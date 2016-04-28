@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FunLayout"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "funny auto layout"
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/Sroik/FunLayout.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/Sroik/FunLayout.git", :tag => "1.0.1" }
   s.framework = "UIKit"
   s.source_files  =  "src/FunLayout/FunLayoutModule/*.{swift}"
 
