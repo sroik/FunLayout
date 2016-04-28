@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(box)
+        self.view.addSubview(self.box)
         
         self.box.fun_prepareForLayout()
         self.box.fun_size == self.view
