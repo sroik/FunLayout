@@ -20,10 +20,11 @@ Alternatively U can use fun_prepareForLayout() function, which also clean all ol
 view.fun_prepareForLayout()
 ```
 
-Use the following formula:
+#To layout elements use the following formula:
 ```swift
 firstItem.fun_attribute % priority {== or ~, <=, >=} secondItem.fun_attribute {*, /} multiplier {+, -} constant
 ```
+
 U can use either == or ~, because they are equal.
 
 ## Examples
@@ -52,23 +53,29 @@ class ViewController: UIViewController {
 -To add fullscreen subview U can use one of the following:
 
 ```swift
-view.fun_edges == superview // or view.fun_edges = superview.fun_edges
+view.fun_edges == superview // or view.fun_edges == superview.fun_edges
 ```
 or
 
 ```swift
 view.fun_size == superview  // or view.fun_size ~ superview.fun_edges
-view.fun_center == superview //or view.fun_size ~ superview
+view.fun_center == superview //or view.fun_center ~ superview
 ```
 
 - Another examples
 
 ```swift
 view.fun_top%750 == anotherView.fun_bottom
+
 view.fun_top%950 ~ anotherView.fun_bottom // don't forget: == equal ~
+
 view.fun_width == anotherView.fun_width*0.5 + 100.0
+
 view.fun_height >= 100.0
+
 view.fun_width <= 100.0
+
+view.fun_edges == antherView.fun_edges\2.0
 ```
 
 ## License
