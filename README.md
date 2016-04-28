@@ -50,7 +50,7 @@ class ViewController: UIViewController {
 }
 ```
 
--To add fullscreen subview U can use one of the following:
+- To add fullscreen subview U can use one of the following:
 
 ```swift
 view.fun_edges == superview // or view.fun_edges == superview.fun_edges
