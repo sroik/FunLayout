@@ -15,6 +15,10 @@ Before use FunLayout, make sure that view.translatesAutoresizingMaskIntoConstrai
 ```swift
 view.translatesAutoresizingMaskIntoConstraints = false
 ```
+Alternatively U can use fun_prepareForLayout() function, which also clean all old constraints.
+```swift
+view.fun_prepareForLayout()
+```
 
 ## Example
 
