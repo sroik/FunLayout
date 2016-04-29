@@ -11,7 +11,7 @@ That's is the main reason for creation FunLayout. FunLayout based on swift opera
 
 ##Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like FunLayout in your projects. You can install it with the following command:
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C/Swift, which automates and simplifies the process of using 3rd-party libraries like FunLayout in your projects. You can install it with the following command:
 
 ```bash
 $ gem install cocoapods
