@@ -9,6 +9,32 @@ Funny auto layout
 
 That's is the main reason for creation FunLayout. FunLayout based on swift operators overloading.
 
+##Installation with CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like FunLayout in your projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+#### Podfile
+
+To integrate FunLayout into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+pod 'FunLayout', '~>1.0.3'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ## Usage
 
 Before use FunLayout, make sure that view.translatesAutoresizingMaskIntoConstraints is false, or set it to false
